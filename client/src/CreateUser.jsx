@@ -12,7 +12,7 @@ function CreateUser() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3001/createuser", { name, email, age })
+      .post("http://localhost:3001/createUser", { name, email, age })
       .then((result) => {
         console.log(result);
         navigate("/");

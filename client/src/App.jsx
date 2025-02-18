@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Users from "./Users";
-import CraeteUser from "./CreateUser";
+import CreateUser from "./CreateUser";
 import UpdateUser from "./Update";
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Users />}></Route>
-          <Route path="/create" element={<CraeteUser />}></Route>
-          <Route path="/update" element={<UpdateUser />}></Route>
+          <Route path="/create" element={<CreateUser />}></Route>
+          <Route path="/update/:id" element={<UpdateUser />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
